@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,29 +9,21 @@ using PetLover.Models;
 
 namespace PetLover.Controllers
 {
-    public class HomeController : Controller
+    public class VacunasController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<VacunasController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public VacunasController(ILogger<VacunasController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        
+        public IActionResult Vacunas()
         {
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Vacunaciones()
-        {
-            return View();
-        }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
