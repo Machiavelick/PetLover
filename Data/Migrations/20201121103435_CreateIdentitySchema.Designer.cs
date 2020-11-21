@@ -10,7 +10,7 @@ using PetLover.Data;
 namespace PetLover.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201121024536_CreateIdentitySchema")]
+    [Migration("20201121103435_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
