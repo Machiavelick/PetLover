@@ -1,0 +1,11 @@
+/* FOOTER */
+.footer {
+    background: #0DDFFB;
+    color: rgb(0, 0, 0);
+    height: 60px;
+}
+
+
+.bg{
+    background-repeat: repeat-y;
+}
