@@ -5,7 +5,7 @@ namespace PetLover.Models
     {
         [Required]
         [Display(Name="Nombre")]
-        public string Nombre { get; set; }
+        public string nombre { get; set; }
 
         [Required]        
         [Display(Name="Apellido")]
