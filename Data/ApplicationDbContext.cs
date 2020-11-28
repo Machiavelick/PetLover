@@ -12,5 +12,6 @@ namespace PetLover.Data
             : base(options)
         {
         }
+        public DbSet<PetLover.Models.Contacto> Contactos { get; set; }
     }
 }
