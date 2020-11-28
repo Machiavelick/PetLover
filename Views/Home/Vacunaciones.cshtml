@@ -1,24 +1,100 @@
 @{
     ViewData["Title"] = "PETLOVER";
 }
-
+<link rel="stylesheet" href="~/css/style.css" />
 <body >
+<style type="txt/css">
 
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px
+    rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11,103,123,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
 
-	<div class="container-fluid">
+}
+.contenedor figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 12px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+</style>
+<div class="col-md-4" class="contenedor">
+				<figure>
+				<img src="/img/peluqueria.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Peluqueria</h3>
+					<p>Servicio de peluqueria y limpieza, para mantener siempre limpios a los nuestros</p>
+				</div>
+				</figure>
+			</div>
+
+	<div class="container-fluid" >
 		<div class="row">
 			<div class="col-md-4">
-				<img src="/img/Vacuna.jpg" class="responsive" height="500px" width="500px">
+				<img src="/img/Vacuna.jpg" class="responsive" >
 			</div>
 			<div class="col-md-4">
-				<img src="/img/dentista.jpg" class="responsive" height="500px" width="500px">
+				<img src="/img/dentista.jpg" class="responsive" >
 			</div>
-			<div class="col-md-4">
-				<img src="/img/peluqueria.jpg" class="responsive" height="500px" width="500px">
+			<div class="col-md-4" class="contenedor">
+				<figure>
+				<img src="/img/peluqueria.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Peluqueria</h3>
+					<p>Servicio de peluqueria y limpieza, para mantener siempre limpios a los nuestros</p>
+				</div>
+				</figure>
 			</div>
 
 		</div>
 	</div>
+
 
 </body>
 
