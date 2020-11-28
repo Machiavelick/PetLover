@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,26 +9,33 @@ using PetLover.Models;
 
 namespace PetLover.Controllers
 {
-    public class HomeController : Controller
+    public class RegistroController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<RegistroController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public RegistroController(ILogger<RegistroController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        
+        public IActionResult Registro()
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        
+        [HttpPost]
+        public IActionResult Registro(Registro registro)
         {
-            return View();
+            if (ModelState.IsValid) 
+            {
+                // TODO: Hacer algo con los parámetros del objecto contacto
+                return RedirectToAction("RegistroConfirmacion");
+            }
+            
+            return View(registro);
         }
-
-        public IActionResult Vacunaciones()
+         public IActionResult RegistroConfirmacion()
         {
             return View();
         }
