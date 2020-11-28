@@ -24,6 +24,21 @@ namespace PetLover.Controllers
             return View();
         }
         
+        [HttpPost]
+        public IActionResult Registro(Registro registro)
+        {
+            if (ModelState.IsValid) 
+            {
+                // TODO: Hacer algo con los parámetros del objecto contacto
+                return RedirectToAction("RegistroConfirmacion");
+            }
+            
+            return View(registro);
+        }
+         public IActionResult RegistroConfirmacion()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
