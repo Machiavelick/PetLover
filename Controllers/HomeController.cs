@@ -28,7 +28,7 @@ namespace PetLover.Controllers
             return View();
         }
 
-        public IActionResult Vacunaciones()
+        public IActionResult Servicios()
         {
             return View();
         }
