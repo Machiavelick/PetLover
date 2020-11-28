@@ -9,3 +9,8 @@
 .bg{
     background-repeat: repeat-y;
 }
+
+.responsive{
+    width: 100%;
+  height: auto;
+}
