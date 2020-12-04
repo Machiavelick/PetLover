@@ -3,95 +3,96 @@
 }
 <link rel="stylesheet" href="~/css/style.css" />
 <body >
-<style type="txt/css">
-
-.contenedor{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.contenedor figure{
-    position: relative;
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: 0px 15px 25px
-    rgba(0, 0, 0, 0.50);
-    cursor: pointer;
-}
-.contenedor figure img{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-}
-.contenedor figure .capa{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(11,103,123,0.6);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-.contenedor figure:hover > .capa{
-    opacity: 1;
-    visibility: visible;
-
-}
-.contenedor figure:hover > .capa h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
-
-}
-.contenedor figure .capa h3{
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 12px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-}
-.contenedor figure .capa p{
-    color: #fff;
-    font-size: 15px;
-    line-height: 1.5;
-    width: 100%;
-    max-width: 220px;
-    margin: auto;
-}
-</style>
-        <div class="contenedor">
-            <figure>
-                <img src="/img/peluqueria.jpg" class="responsive" >
-                <div class="capa">
-                    <h3>Peluqueria</h3>
-                    <p>Servicio de peluqueria y limpieza, para mantener siempre limpios a los nuestros</p>
-                </div>
-            </figure>
-        </div>
-
+      
 	<div class="container-fluid" >
 		<div class="row">
-			<div class="col-md-4">
-				<img src="/img/Vacuna.jpg" class="responsive" >
-			</div>
-			<div class="col-md-4">
-				<img src="/img/dentista.jpg" class="responsive" >
-			</div>
-			<div class="col-md-4" class="contenedor">
+			<div class="col-md-4 contenedor">
 				<figure>
 				<img src="/img/peluqueria.jpg" class="responsive" >
 				<div class="capa">
 					<h3>Peluqueria</h3>
-					<p>Servicio de peluqueria y limpieza, para mantener siempre limpios a los nuestros</p>
+					<p style="margin-top: 30px;">Servicio de peluqueria y limpieza, para mantener siempre limpios a los nuestros.</p>
+				</div>
+				</figure>
+			</div>
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/cirugia.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Cirugia</h3>
+					<p style="margin-top: 30px;">Cirugias especializadas, desde cirugias plasticas hasta neurocirugías.</p>
+				</div>
+				</figure>
+			</div>
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/dentista.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Odontologia</h3>
+					<p style="margin-top: 30px;">Servicios dentales, manten la salud dental de nuestros compañeros saludables.</p>
 				</div>
 				</figure>
 			</div>
 
+		</div>
+        <div class="row">
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/vacuna.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Vacunas</h3>
+					<p style="margin-top: 30px;">Vacunas para mantener protegidos a los nuestros en todo momento</p>
+				</div>
+				</figure>
+			</div>
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/acupuntura.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Acupuntura</h3>
+					<p style="margin-top: 30px;">Complementa nuestros servicios con acupuntura para tratar alteraciones, trastornos o rehabilitaciones.</p>
+				</div>
+				</figure>
+			</div>
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/dermatologia.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Dermatologia</h3>
+					<p style="margin-top: 30px;">Al cuidado de la piel de nuestros amigos, para tratar enfermedades y alergias.</p>
+				</div>
+				</figure>
+			</div>
+
+		</div>
+        <div class="row">
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/electrocardiograma.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Cardiologia</h3>
+					<p style="margin-top: 30px;">Manten un control de cardiologia de tu compañero para prevenir y tratar enfermedades relacionadas.</p>
+				</div>
+				</figure>
+			</div>
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/spa.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Spa</h3>
+					<p style="margin-top: 30px;">Engreimos a los tuyos en nuestro spa, donde nuestros especialistas les ofreceran servicio de alta calidad.</p>
+				</div>
+				</figure>
+			</div>
+			<div class="col-md-4 contenedor">
+				<figure>
+				<img src="/img/resonancia.jpg" class="responsive" >
+				<div class="capa">
+					<h3>Resonancias</h3>
+					<p style="margin-top: 30px;">Contamos con herramientas no invasivas de alta tecnologia para ayudar a diagnosticar a los que nos preocupan.</p>
+				</div>
+				</figure>
+			</div>
 		</div>
 	</div>
 
