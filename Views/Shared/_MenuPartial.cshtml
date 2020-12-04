@@ -1,6 +1,7 @@
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+
     
 @if (SignInManager.IsSignedIn(User))
 {
@@ -16,3 +17,4 @@ else{
         <a class="nav-link text-dark" asp-area="" asp-controller="Contacto" asp-action="Create">Contactenos</a>
      </li>
 }
+
