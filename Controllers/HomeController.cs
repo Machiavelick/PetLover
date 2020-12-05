@@ -32,6 +32,42 @@ namespace PetLover.Controllers
         {
             return View();
         }
+         public IActionResult Peluqueria()
+        {
+            return View();
+        }
+        public IActionResult Acupuntura()
+        {
+            return View();
+        }
+        public IActionResult Cardiologia()
+        {
+            return View();
+        }
+        public IActionResult Cirugia()
+        {
+            return View();
+        }
+        public IActionResult Dermatologia()
+        {
+            return View();
+        }
+        public IActionResult Odontologia()
+        {
+            return View();
+        }
+        public IActionResult Resonancias()
+        {
+            return View();
+        }
+        public IActionResult Spa()
+        {
+            return View();
+        }
+        public IActionResult Vacunas()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
