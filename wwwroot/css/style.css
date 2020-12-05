@@ -1,6 +1,6 @@
 
 .bgfooter {
-    background: #000000;
+    background: #1c9ea7;
     color: rgb(255, 255, 255);
     bottom: 0px;
     position: absolute;
@@ -10,7 +10,8 @@
 
 .bg{
     margin-bottom: 200px;
-    background-image: url("/img/background.jpg");
+   /* background-image: url("/img/background.jpg");*/
+   background-color:#16191C;
 }
 
 .responsive{
