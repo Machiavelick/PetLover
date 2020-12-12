@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,74 +8,89 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/style.css">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/css/styles.css" rel="stylesheet" />
 </head>
+
 <body>
-<div class="bg">
-    <header style="background-color:#16191C;">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/pet-logo.png" style="height: 100px;
-  width: 270px;" ></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
+    <div class="bg">
+        <header style="background-color:#16191C;">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                            src="~/img/pet-logo.png" style="height: 75px; width: 270px;"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <partial name="_LoginPartial" />
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" asp-area="" asp-controller="Home"
+                                    asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
 
-                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Privacy">Tienda</a>
+                                <a class="nav-link text-primary" asp-area="" asp-controller="Home"
+                                    asp-action="Privacy">Tienda</a>
 
-                        </li>
-                      
-                        
-                        <li class="nav-item">
-                        <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Servicios">Servicio</a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Index">Farmacia</a>
-                        </li>
-                        <partial name="_MenuPartial" />
+                            </li>
 
 
-                        
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" asp-area="" asp-controller="Home"
+                                    asp-action="Servicios">Servicio</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" asp-area="" asp-controller="Home"
+                                    asp-action="Index">Farmacia</a>
+                            </li>
+                            <partial name="_MenuPartial" />
+
+
+
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
 
-     <!--<footer class="footer">
+        <!--<footer class="footer">
         <div class="footer">
             <div class="footer-content">
                 <div class="footer-section about"></div>
                 <div class="footer-section links"></div>
                 <div class="footer-section contact-form"></div>
             </div>
-           
+
             <div class="footer-button text-center">
                 &copy; Veterinaria 2020 - Derechos Reservados | Designed by Grupo celeste 
                 @*&copy; 2020 - Veterinaria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
             </div>
         </div>
     </footer>-->
-       
+
         <footer class="bgfooter page-footer font-small stylish-color-dark pt-4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">PetLover</h5>
-                        <p>Atencion las 24 horas, realice sus reservaciones y cuide de los suyos, con profesionales de alto nivel que se aseguraran de que su mascota obtenga los mejores cuidados</p>
+                        <p>Atencion las 24 horas, realice sus reservaciones y cuide de los suyos, con profesionales de
+                            alto nivel que se aseguraran de que su mascota obtenga los mejores cuidados</p>
                     </div>
                     <div class="col-md-2">
                         <h3></h3>
@@ -83,16 +99,19 @@
                         <h3>Servicios Basicos</h3>
                         <ul class="list-unstyled">
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="Dermatologia" style="color: white;">Dermatologia</a>
+                                <a asp-area="" asp-controller="Home" asp-action="Dermatologia"
+                                    style="color: white;">Dermatologia</a>
                             </li>
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="Vacunas" style="color: white;">Vacunas</a>
+                                <a asp-area="" asp-controller="Home" asp-action="Vacunas"
+                                    style="color: white;">Vacunas</a>
                             </li>
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="Odontologia"style="color: white;">Salud Dental</a>
+                                <a asp-area="" asp-controller="Home" asp-action="Odontologia"
+                                    style="color: white;">Salud Dental</a>
                             </li>
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="Spa"style="color: white;">Spa</a>
+                                <a asp-area="" asp-controller="Home" asp-action="Spa" style="color: white;">Spa</a>
                             </li>
                         </ul>
                     </div>
@@ -100,7 +119,8 @@
                         <h3>Contactanos</h3>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="mailto:PetLover@gmail.com?Subject=Consulta" style="color: white;">PetLover@gmail.com</a>
+                                <a href="mailto:PetLover@gmail.com?Subject=Consulta"
+                                    style="color: white;">PetLover@gmail.com</a>
                             </li>
                             <li>
                                 <a>+51 951478562</a>
@@ -109,18 +129,19 @@
                                 <a>(1)5148451</a>
                             </li>
                             <li>
-                                Av San Juan 1186, San Juan de Miraflores 15803 
+                                Av San Juan 1186, San Juan de Miraflores 15803
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
-</div>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </div>
 </body>
+
 </html>

@@ -1,67 +1,136 @@
 ﻿@{
-    ViewData["Title"] = "PETLOVER";
+  ViewData["Title"] = "PETLOVER";
 }
-<body >
-<div class="text-center">
-    <h3 style="text-shadow: 2px 2px;">"Lo mejor, para los que mas queremos"</h3>
-    
-</div>
-<div id="carouselExampleIndicators" class="carousel slide d-block" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active"  class="responsive">
-                <img class="d-block w-100" src="img/1.jpg"   alt="First slide" class="responsive">
-                <div class="carousel-caption d-none d-md-block">
-                  </div>
-              </div>
-              <div class="carousel-item"  class="responsive">
-                <img class="d-block w-100" src="img/2.jpg"  alt="Second slide" class="responsive">
-                <div class="carousel-caption d-none d-md-block">
-                  </div>
-              </div>              
-              <div class="carousel-item"  class="responsive">
-                <img class="d-block w-100" src="img/3.jpg"  alt="Third slide" class="responsive">
-                <div class="carousel-caption d-none d-md-block">
+
+<body>
+  <div class="text-center">
+    <!--<h3 style="text-shadow: 2px 2px;">"Lo mejor, para los que mas queremos"</h3>-->
+
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide d-block" data-ride="carousel" >
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" class="responsive">
+        <img class="d-block w-100" src="img/1.jpg" alt="First slide" class="responsive">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" class="responsive">
+        <img class="d-block w-100" src="img/2.jpg" alt="Second slide" class="responsive"
+          ><!--style="width:640px; height:460px;"-->
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" class="responsive">
+        <img class="d-block w-100" src="img/3.jpg" alt="Third slide" class="responsive"
+          >
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="color: lightblue;">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-              </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/petshop.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="color: lightblue;">2010-2011</h4>
+                                <h4 class="subheading" style="color: lightblue;">Formación del equipo</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div classtyle="color: lightblue;"s="timeline-heading">
+                                <h4 style="color: lightblue;">March 2020</h4>
+                                <h4 class="subheading" style="color: lightblue;">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="color: lightblue;">December 2012</h4>
+                                <h4 class="subheading" style="color: lightblue;">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/peluqueria.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="color: lightblue;">July 2014</h4>
+                                <h4 class="subheading" style="color: lightblue;">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Se Parte
+                                <br />
+                                de nuestra
+                                <br />
+                                Historia!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-    
-    <div class="main-paragraph">
-		<div class="container">
-			<div class="columns">
-				<div class="col-no-mobile column is-5">
-				</div>
+        </section>
+
+<!--
+  <div class="main-paragraph">
+    <div class="container">
+      <div class="columns">
+        <div class="col-no-mobile column is-5">
+        </div>
         <div></div>
-				<div class="column">
-					<div class="main-paragraph-wrapper">
-						<div class="main-paragraph-text" style="background-color: white;">
-                            <br>
-							<h2>Bienvenido</h2>
-							<p>Con mas de 15 años  en el tratamiento de Mascotas. Te invitamos a ser parte de nuestra enorme familia, donde brindamos tanto salud como diversion.</p>
-                            <p>Con nosotros aprenderas a entender mas a tu compañero, a la vez que lo cuidas de el</p>
-                            <p>Disfruta de todos nuestros servicios, asi como de nuestros sabemos. Recuerda, sabemos lo que es mejor para ustedes</p>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            
-						</div>
-					</div>
-				</div>
-			</div>
-			
-          </body>
+        <div class="column">
+          <div class="main-paragraph-wrapper">
+            <div class="main-paragraph-text" style="background-color: white;">
+              <br>
+              <h2>Bienvenido</h2>
+              <p>Con mas de 15 años en el tratamiento de Mascotas. Te invitamos a ser parte de nuestra enorme familia,
+                donde brindamos tanto salud como diversion.</p>
+              <p>Con nosotros aprenderas a entender mas a tu compañero, a la vez que lo cuidas de el</p>
+              <p>Disfruta de todos nuestros servicios, asi como de nuestros sabemos. Recuerda, sabemos lo que es mejor
+                para ustedes</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  -->
+</body>
