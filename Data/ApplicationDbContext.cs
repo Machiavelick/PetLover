@@ -13,5 +13,10 @@ namespace PetLover.Data
         {
         }
         public DbSet<PetLover.Models.Contacto> Contactos { get; set; }
+        public object Productos { get; internal set; }
+
+        public DbSet<PetLover.Models.LikeServices> LikeServices{ get; internal set;}
+
+        //public object Services { get; internal set; }
     }
 }
