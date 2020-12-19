@@ -11,10 +11,10 @@ namespace PetLover.Controllers.Rest
     [Route("api/contactos")]
     public class APIContactosController: ControllerBase
     {
-         private readonly ILogger<APIProductoController> _logger;
+         private readonly ILogger<APIContactosController> _logger;
        private readonly ApplicationDbContext _context;
 
-       public APIContactosController(ILogger<APIProductoController> logger,
+       public APIContactosController(ILogger<APIContactosController> logger,
             ApplicationDbContext context)
         {
             _logger = logger;
