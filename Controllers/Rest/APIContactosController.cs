@@ -27,27 +27,7 @@ namespace PetLover.Controllers.Rest
         {
             var listContactos=_context.Contactos.ToList();
             return listContactos.ToArray();
-        }
-        /*    
-        public IEnumerable<Producto> ListProductos()
-        {
-             var listProductos=_context.Productos.OrderBy(s => s.ID).ToList();   
-             return listProductos.ToArray();
-        }*/
-        
-        /*
-        [HttpGet("{id}")]
-        public Producto GetProduct(int? id)
-        {
-            var producto =  _context.Productos.Find(id);
-            return producto;
-        }
-
-        [HttpPost]
-        public Producto CreateProduct(Producto producto){
-            _context.Add(producto);
-            _context.SaveChanges();
-            return producto;
-        }*/
+        }           
+       
     }
 }

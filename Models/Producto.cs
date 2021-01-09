@@ -4,28 +4,23 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetLover.Models
 {
-    [Table("t_orden_detail")]
-    public class OrdenDetail
+    [Table("t_producto")]
+    public class Producto
     {
-
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
         public int ID { get; set; }
 
-        [Column("productid")]
-        public int producID { get; set; }
+        [Required(ErrorMessage = "Por favor ingrese Nombre")]
+        [Display(Name="Nombre")]
+        [Column("name")]
+        public String Name { get; set; }    
 
-        [Display(Name="Correo")]
-        [Column("email")]
-        public String Email { get; set; }
- 
-        [Display(Name="Cantidad")]
-        [Column("quantity")]
-        public Decimal Quantity { get; set; }
+        [Column("image_name")]
+        public String ImagenName { get; set; }
 
         [Display(Name="Precio")]
         [Column("price")]
         public Decimal Price { get; set; }
     }
 }
-       
