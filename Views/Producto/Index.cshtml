@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Inicio</h1>
+<h1 style="color: white;">Inicio</h1>
 
 <p>
     <a asp-action="Create" style="color: white;">Crear nuevo</a>
@@ -12,13 +12,13 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
+            </th >
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.ImagenName)
             </th>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.Price)
             </th>
             <th></th>
@@ -27,19 +27,19 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td style="color: white;">
                 @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
+            </td >
+            <td style="color: white;">
                 @Html.DisplayFor(modelItem => item.ImagenName)
-            </td>
-            <td>
+            </td >
+            <td style="color: white;">
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID" style="color: white;">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID" style="color: white;">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID" style="color: white;">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ID" style="color: white;" style="color: white;">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID" style="color: white;" style="color: white;">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID" style="color: white;" style="color: white;">Delete</a>
             </td>
         </tr>
 }
