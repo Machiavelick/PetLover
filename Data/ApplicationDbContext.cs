@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PetLover.Models;
 
 namespace PetLover.Data
 {
@@ -14,6 +15,7 @@ namespace PetLover.Data
         }
         public DbSet<PetLover.Models.Contacto> Contactos { get; set; }
         public object Productos { get; internal set; }
+        public DbSet<PetLover.Models.Producto> Producto { get; set; }
 
         //public DbSet<PetLover.Models.LikeServices> LikeServices{ get; internal set;}
 
